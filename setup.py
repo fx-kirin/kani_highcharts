@@ -22,6 +22,7 @@ setup(
     description='Python Highcharts wrapper',
     install_requires=[
         "Jinja2",
+        "python-highcharts",
         "future"
     ],
     keywords=['python', 'ipython', 'highcharts', 'chart', 'visualization', 'graph', 'javascript', 'html'],
