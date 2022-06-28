@@ -11,7 +11,7 @@ import uuid
 import re
 import datetime
 import html
-from collections import Iterable
+from collections.abc import Iterable
 from .options import BaseOptions, ChartOptions, \
     ColorsOptions, CreditsOptions, ExportingOptions, \
     GlobalOptions, LabelsOptions, LangOptions, \
@@ -26,7 +26,7 @@ from .common import Levels, Formatter, CSSObject, SVGObject, JSfunction, RawJava
 CONTENT_FILENAME = "./content.html"
 PAGE_FILENAME = "./page.html"
 
-pl = PackageLoader('highcharts.highstock', 'templates')
+pl = PackageLoader('kani_highcharts.highstock', 'templates')
 jinja2_env = Environment(lstrip_blocks=True, trim_blocks=True, loader=pl)
 
 template_content = jinja2_env.get_template(CONTENT_FILENAME)
